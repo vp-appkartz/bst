@@ -1,0 +1,57 @@
+:root {
+  /* Premium Elegant Palette */
+  --bg-primary: #fcfbf8; /* Clean off-white cream */
+  --bg-secondary: #f4f2eb; /* Slightly darker cream for sections */
+  --bg-tertiary: #ebe7de;
+
+  --text-primary: #1a1a1a; /* Deep charcoal */
+  --text-secondary: #4a4a4a; /* Softer charcoal */
+  --text-inverse: #ffffff;
+  
+  --accent-gold: #bc3e2c; /* Theme Red */
+  --accent-gold-dark: #a03020;
+  --accent-secondary: #f6cc2c; /* Theme Yellow */
+  --accent-dark: #2c2c2c; /* Secondary dark element */
+
+  --border: #e6e1d6;
+  --border-gold: rgba(188, 62, 44, 0.4);
+
+  /* Typography */
+  --font-display: 'Domine', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-script: 'Great Vibes', cursive;
+
+  /* Fluid Typography */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --text-3xl: clamp(2rem, 1.7rem + 1.5vw, 2.5rem);
+  --text-4xl: clamp(2.5rem, 2rem + 2.5vw, 3.5rem);
+  --text-5xl: clamp(3rem, 2.5rem + 3.5vw, 4.5rem);
+  --text-6xl: clamp(3.5rem, 3rem + 4.5vw, 5.5rem);
+  --text-hero: clamp(3.5rem, 6vw, 7rem);
+
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-24: 6rem;
+  --spacing-32: 8rem;
+
+  /* Layout */
+  --container-max-width: 1300px;
+  --header-height: 100px;
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-out;
+  --transition-normal: 400ms cubic-bezier(0.25, 1, 0.5, 1);
+  --transition-slow: 700ms cubic-bezier(0.25, 1, 0.5, 1);
+}
