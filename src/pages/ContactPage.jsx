@@ -19,19 +19,21 @@ export default function ContactPage() {
     const lastName = nameParts.slice(1).join(' ') || '';
 
     const data = {
-      firstName,
-      lastName,
+      access_key: 'YOUR_ACCESS_KEY_HERE', // Placeholder for Web3Forms access key
+      name: fullName,
       phone: formData.get('phone'),
       email: formData.get('email'),
       inquiryType: formData.get('inquiryType'),
       message: formData.get('message'),
+      subject: `New Contact Form Submission: ${formData.get('inquiryType')}`,
     };
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
         body: JSON.stringify(data),
       });

@@ -30,7 +30,7 @@ export default function Footer() {
               </div>
               
               <div className="md:col-span-2">
-                  <h4 className="font-label-md text-label-md text-secondary uppercase tracking-widest mb-6">Quick Links</h4>
+                  <h4 className="font-label-md text-label-md text-primary uppercase tracking-widest mb-6">Quick Links</h4>
                   <ul className="space-y-4">
                       <li><Link to="/" className="font-body-md text-on-surface hover:text-primary transition-colors">Home</Link></li>
                       <li><Link to="/menu" className="font-body-md text-on-surface hover:text-primary transition-colors">Menu</Link></li>
@@ -39,7 +39,7 @@ export default function Footer() {
               </div>
               
               <div className="md:col-span-4">
-                  <h4 className="font-label-md text-label-md text-secondary uppercase tracking-widest mb-6">Contact</h4>
+                  <h4 className="font-label-md text-label-md text-primary uppercase tracking-widest mb-6">Contact</h4>
                   <ul className="space-y-4">
                       <li className="flex gap-3 items-start">
                           <MapPin size={20} className="text-primary mt-1 shrink-0" />
@@ -63,7 +63,7 @@ export default function Footer() {
               </div>
               
               <div className="md:col-span-3">
-                  <h4 className="font-label-md text-label-md text-secondary uppercase tracking-widest mb-6">Hours</h4>
+                  <h4 className="font-label-md text-label-md text-primary uppercase tracking-widest mb-6">Hours</h4>
                   <ul className="space-y-3">
                       {siteConfig.hours.map(hour => (
                         <li key={hour.day} className="flex justify-between">

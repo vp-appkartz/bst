@@ -3,9 +3,9 @@ import React from 'react';
 export default function Story() {
   return (
     <section className="py-24 parchment-texture relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-5 w-[800px] pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-5 w-full flex justify-center pointer-events-none">
             {/* If there's an image logo, we use it here. For now, empty or text-based */}
-            <span className="font-headline-md text-[150px] tracking-widest text-primary whitespace-nowrap">BOMBAY STREET</span>
+            <span className="font-headline-md text-[60px] md:text-[150px] tracking-widest text-primary whitespace-nowrap">BOMBAY STREET</span>
         </div>
         <div className="max-w-4xl mx-auto px-margin-mobile text-center relative z-10">
             <div className="w-16 h-1 bg-primary mx-auto mb-8"></div>

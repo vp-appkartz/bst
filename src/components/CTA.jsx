@@ -1,5 +1,6 @@
 import React from 'react';
 import { siteConfig } from '../config/site';
+import ctaBgImg from '../assets/bst-cta-1.webp';
 
 export default function CTA() {
   return (
@@ -8,7 +9,7 @@ export default function CTA() {
       <div className="absolute inset-0 z-0">
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2000&auto=format&fit=crop')" }}
+          style={{ backgroundImage: `url(${ctaBgImg})` }}
         ></div>
         <div className="absolute inset-0 bg-black/70 backdrop-blur-[2px]"></div>
       </div>
