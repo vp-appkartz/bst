@@ -6,13 +6,22 @@ import { menuData } from '../data/menu';
 
 export default function InteractiveMenu() {
   const location = useLocation();
-  const [selectedMenu, setSelectedMenu] = useState(location.state?.activeMenu || menuData[0]?.menuName || '');
+  
+  // Helper to find matching menu case-insensitively
+  const getMatchedMenuName = (menuName) => {
+    const matched = menuData.find(m => m.menuName.toLowerCase() === menuName?.toLowerCase());
+    return matched ? matched.menuName : (menuData[0]?.menuName || '');
+  };
+
+  const [selectedMenu, setSelectedMenu] = useState(
+    location.state?.activeMenu ? getMatchedMenuName(location.state.activeMenu) : (menuData[0]?.menuName || '')
+  );
   const [filter, setFilter] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
   
   useEffect(() => {
     if (location.state?.activeMenu) {
-      setSelectedMenu(location.state.activeMenu);
+      setSelectedMenu(getMatchedMenuName(location.state.activeMenu));
       // scroll to the top of the menu container or at least ensure smooth behavior
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
