@@ -5,7 +5,7 @@ const categories = [
   {
     name: 'Bombay Tadka',
     description: 'Authentic street food and rich curries from the heart of Mumbai.',
-    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=800&auto=format&fit=crop',
+    image: '/bombay-tadka.png',
     link: '/menu'
   },
   {
