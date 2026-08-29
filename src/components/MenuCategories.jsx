@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import bombayTadkaImg from '../assets/bombay-tadka.png';
 
 const categories = [
   {
     name: 'Bombay Tadka',
     description: 'Authentic street food and rich curries from the heart of Mumbai.',
-    image: '/bombay-tadka.png',
+    image: bombayTadkaImg,
     link: '/menu'
   },
   {
